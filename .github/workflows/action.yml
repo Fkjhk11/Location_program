@@ -14,13 +14,15 @@ jobs:
    steps:
      - name: Print Hello Message in Testing
        run: echo "Hello World from Testing job"
+       
      - name: Execute few coomands
        run: |
         echo "Hello Message1"
         echo "Hello Message2"
         echo "Application name:  ${{ env. APPLICATION_NAME }}"
+        
      - name: List current folder
-       run: ls -il
+       run: ls -la
 
   my_deploy:
    runs-on: ubuntu-latest
@@ -28,6 +30,7 @@ jobs:
    steps:
      - name: Print Hello Message in Deploy
        run: echo "Hello World from Deploy job"
+       
      - name: Printing Deployment package
        run: echo "Deploy package name is ${{ env.DEPLOY_PACKAGE_NAME }}"
   
