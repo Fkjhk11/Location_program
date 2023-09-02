@@ -51,7 +51,7 @@ jobs:
        run: zip
 
      - name: Print VAR
-       run: "${{ env.VAR1 }} = ${{ env.VAR2 }}"
+       run: echo "${{ env.VAR1 }} = ${{ env.VAR2 }}"
        
   
 
