@@ -28,7 +28,7 @@ jobs:
        uses: action/checkout@v1
 
      - name: List current folder
-       run: ls -il
+       run: ls -la
 
   my_deploy:
    runs-on: ubuntu-latest
